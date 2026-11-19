@@ -11,13 +11,33 @@ Repositorio personal de extensiones para [Mangayomi](https://github.com/kodjodev
    https://raw.githubusercontent.com/race-mountain-rock/mangayomi-extensions/main/anime_index.json
    ```
 
-3. Instala o actualiza **TioAnime** (versión 0.1.13).
+3. Instala las extensiones que quieras.
 
 ## Extensiones
 
-| Fuente   | Idioma | Versión | Notas |
-|----------|--------|---------|-------|
-| TioAnime | es     | 0.1.13  | Arreglada (ver abajo) |
+| Fuente   | Idioma | Versión | Servidores de video        | Notas |
+|----------|--------|---------|----------------------------|-------|
+| TioAnime | es     | 0.1.13  | Voe, YourUpload, Okru      | Arreglada (ver abajo) |
+| TVAnime  | es     | 0.1.0   | Voe, MP4Upload (Sub y Dub) | Nueva; oculta los títulos hentai del directorio |
+| AnimeAV1 | es     | 0.1.0   | HLS, Voe, MP4Upload (Sub y Dub) | Nueva |
+
+Servidores como Mega, Byse o UPNShare aparecen en los sitios pero no se pueden reproducir
+desde la extensión, así que se omiten.
+
+### TVAnime 0.1.0
+
+- Populares (mejor valorados), recientes (agregados recientemente), búsqueda y filtros por
+  tipo, género, estado y orden.
+- Lista completa de episodios, aunque el sitio los muestre en páginas de 50 (One Piece: 1180).
+- El directorio del sitio mezcla anime con hentai; los títulos con géneros explícitos se
+  ocultan de los listados.
+
+### AnimeAV1 0.1.0
+
+- Populares, últimos episodios, búsqueda y filtros por tipo, género, estado y orden.
+- El servidor **HLS** es el reproductor propio de AnimeAV1 (`player.zilla-networks.com`).
+- El catálogo del sitio solo llega a 50 páginas (1000 títulos); para encontrar algo más
+  antiguo usa la búsqueda o los filtros.
 
 ### TioAnime 0.1.13: qué se arregló
 
@@ -34,6 +54,6 @@ Repositorio personal de extensiones para [Mangayomi](https://github.com/kodjodev
 
 ## Créditos
 
-Basado en la extensión TioAnime de
-[m2k3a/mangayomi-extensions](https://github.com/m2k3a/mangayomi-extensions), bajo licencia
-Apache 2.0 (ver `LICENSE`).
+La extensión TioAnime y la librería de extractores (`mangayomi-js-helpers`) que usan las tres
+extensiones vienen de [m2k3a/mangayomi-extensions](https://github.com/m2k3a/mangayomi-extensions),
+bajo licencia Apache 2.0 (ver `LICENSE`).
